@@ -12,7 +12,7 @@ const TasksPage = () => {
     const [inputV, setInputV] = useState('')
 
     useEffect(() => {
-        axios.get('/tasks', {withCredentials: true})
+        axios.get('/task', {withCredentials: true})
         .then(res => setTasks(res.data))
         .catch(e => console.log(e)) 
     }, [])
@@ -26,7 +26,7 @@ const TasksPage = () => {
 
         const data = {description: inputV, completed: false}
 
-        axios.post('/tasks', data, {withCredentials: true})
+        axios.post('/task', data, {withCredentials: true})
         .then(res => {           
             setTasks([...Tasks, {...res.data}])
         })

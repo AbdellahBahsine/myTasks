@@ -22,7 +22,7 @@ const Task = ({id, task, editTask, deleteTask}) => {
     }
 
     const handleDelete = () => {
-        axios.delete(`/tasks/${id}`, {withCredentials: true})
+        axios.delete(`/task/${id}`, {withCredentials: true})
         .then(res => console.log(res))
         .catch(e => console.log(e))
 

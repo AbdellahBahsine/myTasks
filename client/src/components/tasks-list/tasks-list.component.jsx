@@ -13,7 +13,7 @@ const TasksList = ({Tasks, setTasks, deleteTask}) => {
             return task
         })
 
-        axios.patch(`/${id}`, {description: updatedTask}, {withCredentials: true})
+        axios.patch(`/task/${id}`, {description: updatedTask}, {withCredentials: true})
         .then(res => setTasks(updatedTasks))
         .catch(e => console.log(e))
     }
