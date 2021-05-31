@@ -18,8 +18,6 @@ const TasksList = ({Tasks, setTasks, deleteTask}) => {
         .catch(e => console.log(e))
     }
 
-    console.log(Tasks)
-
     return (
         <div>
             <div className="w-100 my-4 border"></div>

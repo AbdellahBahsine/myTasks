@@ -26,7 +26,7 @@ const Task = ({id, task, editTask, deleteTask}) => {
         .then(res => console.log(res))
         .catch(e => console.log(e))
 
-        deleteTask(task)
+        deleteTask(id, task)
     }
  
     return (
