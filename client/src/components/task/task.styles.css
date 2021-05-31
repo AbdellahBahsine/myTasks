@@ -1,0 +1,12 @@
+.task{
+    border: 1px solid #ced4da;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: #ced4da;
+}
+
+.fa-edit{
+    font-size: 14px
+}

@@ -1,0 +1,39 @@
+header{
+    height: 60px;
+}
+
+.logo{
+    font-family: 'Itim', cursive;
+    text-decoration: none;
+}
+
+.logo:hover{
+    text-decoration: none;
+}
+
+.settings-container{
+    position: relative;
+}
+
+.gear-icon, .signout-btn, .tasks-link{
+    background: none;
+    border: none;
+    outline: none; 
+    font-size: 16px;
+}
+
+.settings{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 130px;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    opacity: 0;
+    z-index: 3;
+}
+
+.settings.active{
+    opacity: 1;
+    transition: 0.8s;
+}
