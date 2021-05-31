@@ -19,7 +19,7 @@ router.post('/task', auth, async (req, res) => {
 router.get('/task', auth, async (req, res) => {
     try{
         await req.user.populate('task').execPopulate()
-        res.send(req.user.tasks)
+        res.send(req.user.task)
     } catch(e){
         res.send(e)
     }
