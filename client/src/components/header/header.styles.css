@@ -18,8 +18,9 @@ header{
 .gear-icon, .signout-btn, .tasks-link{
     background: none;
     border: none;
-    outline: none; 
+    outline: none !important; 
     font-size: 16px;
+    cursor: pointer;
 }
 
 .settings{
